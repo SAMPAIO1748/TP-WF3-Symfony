@@ -1,0 +1,28 @@
+{% extends "block.html.twig" %}
+
+{% block main %}
+
+<div class="container-fluid">
+    <div class="row card">
+
+    <h1>{{ genre.name }}</h1>
+
+    <p>{{ genre.description }}</p>
+
+    <h2  class="underligne">Liste des livres</h2>
+
+    {% for book in genre.books %}
+        <h3>{{ book.title }}</h3>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+<p>Magnifique !</p>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "block.html.twig" %}
+
+{% block link %}
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block main %}
+
+	<div class="container-fluid1">
+        <div class="row1">
+
+			<h1>Vous pouvez rajouter ou modifier un genre</h1>
+
+    		{{form_start(genreForm)}}
+
+			<div class="d-flex flex-column justify-content-around">
+
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(genreForm.name, 'Nom du genre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(genreForm.name, {'attr' : {'class' : 'input', 'placeholder' : 'Nom du genre'} } ) }}
+				</div>
+
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(genreForm.description, 'Description du genre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(genreForm.description, {'attr' : {'class' : 'input', 'placeholder' : 'Description du genre'} } ) }}
+				</div>
+
+				<div>
+					{{form_widget(genreForm.Enregistrer, {'attr' : {'class' : 'btn btn-primary mb-3'} } ) }}
+				</div>
+				
+
+			</div>
+
+			{{form_end(genreForm)}}
+
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block footer %}
+
+	<p>
+        Merci d'ajouter ou modifier des genres.
+    </p>
+
+<style>
+	body{
+		background-color: darkcyan;
+	}
+</style>
+
+{% endblock %}

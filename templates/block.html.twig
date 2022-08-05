@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {% block link %}{% endblock %}
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+        <div class="w20">
+            <a href="{{ path('home') }}">
+                <img class="w35" src="https://static.vecteezy.com/system/resources/previews/001/195/907/non_2x/water-logo-png.png">
+            </a>
+        </div>
+        <div class="w60">
+            <div class="w30">
+                <a href="{{ path('books_list') }}">Livres</a>
+            </div>
+            <div class="w30">
+                <a href="{{ path('genres_list') }}">Genre</a>
+            </div>
+            <div class="w30">
+                <a href="{{ path('writers_list') }}">Auteur</a>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer class="footer">
+    {% block footer %}{% endblock %}
+    </footer>
+    
+</body>
+</html>

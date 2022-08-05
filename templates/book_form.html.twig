@@ -1,0 +1,74 @@
+{% extends "block.html.twig" %}
+
+{% block link %}
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block main %}
+
+    {{form_start(bookForm)}}
+
+	<div class="container-fluid1">
+        <div class="row1">
+
+			<h1>Vous pouvez rajouter ou modifier un livre</h1>
+
+
+			<div class="d-flex flex-column justify-content-around">
+
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(bookForm.title, 'Titre du livre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(bookForm.title, {'attr' : {'class' : 'input', 'placeholder' : 'Titre du livre'} } ) }}	
+				</div>
+
+			
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(bookForm.year, 'Année du livre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(bookForm.year, {'attr' : {'class' : 'input', 'placeholder' : 'Année du livre'} } ) }}
+				</div>
+
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(bookForm.resume, 'Résumé du livre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(bookForm.resume, {'attr' : {'class' : 'input', 'placeholder' : 'Résumé du livre'} } ) }}
+				</div>
+				
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(bookForm.genre, 'Genre du livre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(bookForm.genre, {'attr' : {'class' : 'input'} } ) }}
+				</div>
+				
+				<div class="d-flex flex-column justify-content-center">
+					{{form_label(bookForm.writer, 'Auteur du livre :', {'label_attr' : {'class' : 'label'} } ) }}
+					{{form_widget(bookForm.writer, {'attr' : {'class' : 'input'} } ) }}
+				</div>
+				
+				<div>
+					{{form_widget(bookForm.Enregistrer, {'attr' : {'class' : 'btn btn-primary mb-3'} } ) }}
+				</div>
+    		
+
+			</div>
+
+		</div>
+	</div>
+
+
+{{form_end(bookForm)}}
+
+{% endblock %}
+
+{% block footer %}
+
+	<p>
+        Merci d'ajouter ou modifier des livres.
+    </p>
+
+<style>
+	body{
+		background-color: darkcyan;
+	}
+</style>
+
+{% endblock %}

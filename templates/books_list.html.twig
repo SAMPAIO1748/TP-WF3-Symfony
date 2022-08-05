@@ -1,0 +1,28 @@
+{% extends "block.html.twig" %}
+
+{% block main %}
+
+ <div class="container">
+
+    {% for book in books %}
+
+    <div class="row">
+
+        <a href="{{ path('book_show', {'id' : book.id } ) }}"><h2>{{ book.title }}</h2></a>
+        <a href="{{ path('book_update', {'id' : book.id } ) }}" class="update">Modifier le livre</a>
+        <a href="{{ path('book_delete', {'id' : book.id } ) }}" class="delete">Supprimer le livre</a>
+        
+    </div>
+        
+    {% endfor %}
+
+ </div>
+
+   
+
+    
+
+{% endblock %} 
+    {% block footer %}
+        <a href="{{ path('book_create') }}" class="add">Ajouter un livre</a>
+    {% endblock %}

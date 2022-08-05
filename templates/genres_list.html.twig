@@ -1,0 +1,27 @@
+{% extends "block.html.twig" %}
+
+{% block main %}
+
+<div class="container">
+
+{% for genre in genres %}
+
+    <div class="row">
+
+        <a href="{{ path('genre_show', {'id' : genre.id} ) }}"> <h2>{{ genre.name }}</h2></a>
+        <a href="{{ path('genre_update', {'id' : genre.id} ) }}" class="update">Modifier le genre</a>
+        <a href="{{  path('genre_delete', {'id' : genre.id} )  }}" class="delete">Supprimer le genre</a>
+
+    </div>
+   
+    
+{% endfor %}
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    <a href="{{  path('genre_create')  }}"  class="add">Créer un genre</a>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends "block.html.twig" %}
+
+{% block main %}
+
+<div class="container">
+
+
+{% for writer in writers %}
+    <div class="row">
+        <a href="{{ path('writer_show', {'id' : writer.id }) }}"><h2>{{ writer.name }}</h2></a>
+        <a href="{{ path('writer_update', {'id' : writer.id }) }}" class="update">Modifier l'auteur</h2></a>
+        <a href="{{ path('writer_delete', {'id' : writer.id }) }}" class="delete">Supprimer l'auteur</a>
+    </div>
+{% endfor %}
+
+    
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    <a href="{{ path('writer_create') }}" class="add">Ajouter un auteur</a>
+{% endblock %}
+

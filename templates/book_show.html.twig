@@ -1,0 +1,29 @@
+{% extends "block.html.twig" %}
+
+{% block main %}
+
+<div class="container-fluid">
+      <div class="row card">
+
+         <h1>{{book.title}}</h1>
+         <h3>{{ book.year }}</h3>
+
+         <p>{{ book.resume }}</p>
+      
+      </div>
+
+</div>
+
+
+
+  
+{% endblock %}
+
+
+{% block footer %}
+   <h3>Genre : {{ book.genre.name }}</h3>
+   <h3>Auteur : {{ book.writer.name }}</h3>
+{% endblock %}
+
+
+ 

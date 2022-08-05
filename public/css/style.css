@@ -1,0 +1,186 @@
+body{
+    background-color: darkcyan;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background: #5eb5e0;
+    text-align: center;
+    font-size: 2.6em;
+    color: darkslateblue;
+    border: darkslateblue 5px solid;
+    border-radius: 20px;
+    margin: 1% 1%;
+    box-shadow: 10px 5px 5px black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container{
+    background: DeepSkyBlue;
+    border: darkblue 5px solid;
+    border-radius: 20px;
+    margin: 1% 1%;
+    box-shadow: 10px 5px 5px black;
+}
+
+.add{
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 20px;
+    margin: 2% 0%;
+    padding: 0% 1%;
+}
+
+.delete{
+    background-color: darkred;
+    color:white;
+    border: 5px darkred solid;
+    border-radius: 20px;
+    display: block;
+    width: 25%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.update{
+    background-color: darkgreen;
+    color:white;
+    border: 5px darkgreen solid;
+    border-radius: 20px;
+    display: block;
+    width: 25%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.row a{
+    font-size: 1.8em;
+    text-decoration: none;
+    color : mediumblue;
+}
+
+.row{
+    width: 47%;
+    display: inline-block;
+    background: MediumTurquoise;
+    border: solid 5px navy;
+    border-radius: 20px;
+    color : navy;
+    margin: 1% 1%;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+}
+
+.footer{
+    background: LightSeaGreen;
+    text-align: center;
+    font-size: 2.6em;
+    color: MidnightBlue;
+    border: MidnightBlue 5px solid;
+    border-radius: 20px;
+    margin: 1% 1%;
+    box-shadow: 10px 5px 5px black;
+}
+
+.w20{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w60{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.w30{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+.w30 a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.w35{
+    width: 80%;
+}
+
+.w30 a{
+    text-align: center;
+    text-decoration: none;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.container-fluid{
+    background: DeepSkyBlue;
+    border: darkblue 5px solid;
+    border-radius: 20px;
+    margin: 1% 1%;
+    box-shadow: 10px 5px 5px black;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    text-decoration: none;
+    color : mediumblue;
+}
+
+.card{
+    width: 98%;
+}
+
+.underligne{
+    text-decoration: underline;
+}
+
+.container-fluid1{
+    background: DeepSkyBlue;
+    border: darkblue 5px solid;
+    border-radius: 20px;
+    margin: 1% 1%;
+    box-shadow: 10px 5px 5px black;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    text-decoration: none;
+    color : mediumblue;
+}
+
+.row1{
+    width: 90%;
+    display: inline-block;
+    background: MediumTurquoise;
+    border: solid 5px navy;
+    border-radius: 20px;
+    color : navy;
+    margin: 1% 1%;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+}
+
+.row1 a{
+    font-size: 1.8em;
+    text-decoration: none;
+    color : mediumblue;
+}
+
+.label{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.input{
+    margin: 1% 5%;
+    width: 90%;
+    font-size: 1.0em;
+    border-radius: 10px;
+}
